@@ -21,6 +21,7 @@ import Contacto from './components/contacto';
 import Collares from './components/collares';
 import Pulseras from './components/pulseras';
 import Aretes from './components/aretes';
+import Preguntas from './components/preguntas';
 
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 const store = createStoreWithMiddleware(reducers);
@@ -43,6 +44,7 @@ ReactDOM.render(
 			<Route path="collares" component={Collares} />
 			<Route path="pulseras" component={Pulseras} />
 			<Route path="aretes" component={Aretes} />
+			<Route path="preguntas" component={Preguntas} />
 		</Route>
 	</Router>
 </Provider>

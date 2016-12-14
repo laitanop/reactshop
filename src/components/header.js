@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
 import { MenuItem, NavItem, Navbar, NavDropdown, Nav, FormControl, Glyphicon } from 'react-bootstrap';
+import NavBar from './navbar';
 
 
 class Header extends Component {
@@ -19,7 +20,8 @@ class Header extends Component {
 						<MenuItem eventKey={4.1} ><Link to="collares">Collares</Link></MenuItem>
 						<MenuItem eventKey={4.2}><Link to="pulseras">Pulseras</Link></MenuItem>
 						<MenuItem eventKey={4.3}><Link to="aretes">Aretes</Link></MenuItem>
-					</NavDropdown> 	
+					</NavDropdown> 
+
 		
 			{ this.renderSignIn(authenticated) } 
 			
@@ -49,6 +51,7 @@ class Header extends Component {
 		render() {
 			return (
 				<div>
+				<NavBar />
 						{this.renderLinks()}	
 				
 				
