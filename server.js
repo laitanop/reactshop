@@ -1,7 +1,7 @@
 var path = require('path');
 var express = require('express');
+var PORT = process.env.PORT || 8080 ;
 var app = express();
-var PORT = process.env.PORT || 8080
 
 // using webpack-dev-server and middleware in development environment
 /*if(process.env.NODE_ENV !== 'production') {
@@ -15,9 +15,9 @@ var PORT = process.env.PORT || 8080
   app.use(webpackHotMiddleware(compiler));
 }*/
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
 
-app.get('/', function(request, response) {
+app.get('*', function(request, response) {
   response.sendFile(__dirname + '/public/index.html')
 });
 
