@@ -8,8 +8,8 @@
     "start-dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch",
-    "build": "webpack",  
-    "start":  "npm run build && node /public/bundle.js"
+    "build": "webpack -p --progress --colors",  
+    "start":  "npm run build && node server.js"
   },
   "author": "",
   "license": "ISC",
