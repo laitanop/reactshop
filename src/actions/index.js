@@ -1,11 +1,13 @@
 import { browserHistory } from 'react-router';
-import firebase from '../firebase';
+import firebase, { firebaseRef } from '../firebase';
+
 import { 
 	AUTH_USER, 
 	AUTH_ERROR,
 	SIGN_OUT_USER,
-	FETCH_MESSAGE
-
+	FETCH_MESSAGE, 
+  FETCH_ITEMS
+  
 } from './types';
 
 export function signinUser({ email, password }) {
@@ -73,24 +75,37 @@ export function signoutUser() {
   };
 }
 
-/*export function fetchMessage() {
-	return function (dispatch) {
-		axios.get(ROOT_URL, {
-			headers: { authorization: localStorage.getItem('token') }
-		})
-		.then(response => {
-			dispatch({
-				type: FETCH_MESSAGE,
-				payload: response.data.message
-			});
-		});
-	};
-}*/
+export function fetchItems() {
+ return (dispatch, getState) => {
+  console.log('entre a fetchItems');
+  const collaresRef = firebaseRef.child('collares');
+  console.log(collaresRef);
 
-export function fetchMessage() {
-	return {
-		type: FETCH_MESSAGE,
-		payload: 'hola mami aqui usando firebase'
-	};
+  return collaresRef.once('value').then((snapshot) => {
+    const collares = snapshot.val() || {};
+    let parsedCollares = [];
+
+    Object.keys(collares).forEach((collarId) => {
+      parsedCollares.push({
+        id: collarId,
+        ...collares[collarId]  
+      });
+    });
+
+    
+    dispatch({ type: FETCH_ITEMS, 
+               payload: parsedCollares });
+    });
+ };
 }
+
+/*export function fetchMessage() {
+  firebase.child('collares').then((snapshot) => {
+    dispatch({ type: FETCH_ITEMS, 
+               payload: snapshot.val() });
+    
+
+  });
+	
+}*/
 

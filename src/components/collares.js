@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import Item from './item';
+import { connect } from 'react-redux';
+import * as actions from '../actions';
 
 
 class Collares extends Component {
+  componentWillMount() {
+    this.props.fetchItems();
+   }
+
   render() {
     return (
       <div>
@@ -35,4 +41,8 @@ class Collares extends Component {
   }
 }
 
-export default Collares;
+function mapStateToProps(state) {
+  return { items: state.items.items };
+}
+
+export default connect(mapStateToProps, actions)(Collares);
