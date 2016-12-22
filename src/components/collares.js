@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
-import Item from './item';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
-
+import Item from './item';
 
 class Collares extends Component {
   componentWillMount() {
-    this.props.fetchItems();
+    this.props.fetchItems('collares');
    }
 
   render() {
@@ -16,22 +15,35 @@ class Collares extends Component {
       
        <Grid>
     <Row>
+
+
     <Col xs={6} md={4}>
 
-    <Item />
+    <Item 
+      item={this.props.items ? this.props.items[0] : null} 
+      type={'collares'} 
+    />
      
 
     </Col>
     <Col xs={6} md={4}>
-    <Item />
+    <Item 
+      item={this.props.items ? this.props.items[1] : null} 
+      type={'collares'} 
+    />
      
 
     </Col>
+
     <Col xs={6} md={4}>
-    <Item />
-      
+    <Item 
+      item={this.props.items ? this.props.items[2] : null} 
+      type={'collares'} 
+    />
+     
 
     </Col>
+ 
     </Row>
   </Grid>
        

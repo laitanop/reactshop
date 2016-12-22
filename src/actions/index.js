@@ -5,7 +5,6 @@ import {
 	AUTH_USER, 
 	AUTH_ERROR,
 	SIGN_OUT_USER,
-	FETCH_MESSAGE, 
   FETCH_ITEMS
   
 } from './types';
@@ -75,37 +74,24 @@ export function signoutUser() {
   };
 }
 
-export function fetchItems() {
+export function fetchItems(itemName) {
  return (dispatch, getState) => {
-  console.log('entre a fetchItems');
-  const collaresRef = firebaseRef.child('collares');
-  console.log(collaresRef);
+  const itemRef = firebaseRef.child(itemName);
 
-  return collaresRef.once('value').then((snapshot) => {
-    const collares = snapshot.val() || {};
-    let parsedCollares = [];
+  return itemRef.once('value').then((snapshot) => {
+    const items = snapshot.val() || {};
+    const parsedItems = [];
 
-    Object.keys(collares).forEach((collarId) => {
-      parsedCollares.push({
-        id: collarId,
-        ...collares[collarId]  
+    Object.keys(items).forEach((itemId) => {
+      parsedItems.push({
+        id: itemId,
+        ...items[itemId]  
       });
     });
-
-    
+   
     dispatch({ type: FETCH_ITEMS, 
-               payload: parsedCollares });
+               payload: parsedItems });
     });
  };
 }
-
-/*export function fetchMessage() {
-  firebase.child('collares').then((snapshot) => {
-    dispatch({ type: FETCH_ITEMS, 
-               payload: snapshot.val() });
-    
-
-  });
-	
-}*/
 
