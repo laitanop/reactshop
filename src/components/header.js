@@ -12,8 +12,8 @@ class Header extends Component {
 			return (
 			<Navbar className="navbar-form navbar-fixed-top">
 			
-			<Nav className="nav">
-			<NavItem eventKey={2}><Link to="nosotros">About</Link></NavItem>
+			<Nav className="navbar">
+			<NavItem className="about"eventKey={2}><Link to="nosotros">About</Link></NavItem>
 			<NavItem eventKey={3}><Link to="contacto">Contact Us</Link></NavItem>
 			<NavDropdown eventKey={4} title="Shop" id="basic-nav-dropdown">
 				<MenuItem eventKey={4.1} ><Link to="necklace">Necklaces</Link></MenuItem>
@@ -23,8 +23,10 @@ class Header extends Component {
 
 		
 			{ this.renderSignIn(authenticated) } 
-			
+
 			<NavItem eventKey={16}>&nbsp;Shopping Cart &nbsp;<Glyphicon glyph="glyphicon glyphicon-shopping-cart" /></NavItem>
+
+			
 	
 			</Nav>
 			</Navbar>
@@ -36,7 +38,14 @@ class Header extends Component {
 			console.log(authenticated);
 			if (authenticated) {
 				return (
+					
+
 					<NavItem eventKey={9}><Link to="/signout">Log out</Link></NavItem>
+
+					
+
+				
+
 				);	    
 			} else {
 				return (
@@ -69,5 +78,3 @@ function mapStateToProps(state) {
 export default connect(mapStateToProps)(Header);
 
 
-	// <NavItem eventKey={1}><Link to="/"><img className="lead float-xs-left" role="presentation" src="img/logo/logo1.jpg" width="100" height="" /></Link></NavItem>
-// <NavItem eventKey={15}><FormControl type="text" placeholder="Search..." /></NavItem>

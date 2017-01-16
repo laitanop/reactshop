@@ -35,20 +35,46 @@ body {
 	font-family: Lucida Bright,Georgia,serif;
 	color: #6495ED;
 	padding-top: 150px;
+
 	
 
 }
 
-.navbar-fixed-top {
+.mynamesite h1 {
+	text-align: left;
+}
+
+/*.navbar-fixed-top {
 	float: right;
+
+}*/
+
+.navbar {
+	float: right;
+	font-size: 20px;
+	background: transparent;
 	
 }
-.nav {
-	float: right;
-	color: black;
-}
+
+
 .information {
 	background: #FF1493;
 	color: white
 	
 }
+
+.navfooter {
+	display: inline;
+	float: right;
+	padding-top: 10px;
+
+	
+}
+
+.navfooter1 {
+	border-color: pink;
+	color: #FF1493;
+
+
+}
+
