@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import * as actions from '../actions';
 import Item from './item';
 
-class Aretes extends Component {
+class Earing extends Component {
 	componentWillMount() {
     this.props.fetchItems('aretes');
    }
@@ -53,7 +53,7 @@ function mapStateToProps(state) {
   return { items: state.items.items };
 }
 
-export default connect(mapStateToProps, actions)(Aretes);
+export default connect(mapStateToProps, actions)(Earing);
 
 
 

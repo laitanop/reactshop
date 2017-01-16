@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import DemoCarousel from '../components/carrusel';
-
+import PhotoShape from './photoshape';
+import Information from './information';
 
 
 class Inicio extends Component {
@@ -9,10 +10,11 @@ class Inicio extends Component {
       <div>
       
       
-      <DemoCarousel />
-      
+      <DemoCarousel />   
 
-      
+      <PhotoShape />
+      <Information />
+    
       </div>
     );
   }

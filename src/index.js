@@ -18,10 +18,11 @@ import reducers from './reducers';
 import Inicio from './components/inicio';
 import Nosotros from './components/nosotros';
 import Contacto from './components/contacto';
-import Collares from './components/collares';
+import Necklace from './components/necklace';
 import Pulseras from './components/pulseras';
-import Aretes from './components/aretes';
+import Earing from './components/earing';
 import Preguntas from './components/preguntas';
+
 
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 const store = createStoreWithMiddleware(reducers);
@@ -41,9 +42,9 @@ ReactDOM.render(
 			<Route path="feature" component={RequireAuth(Feature)} />
 			<Route path="nosotros" component={Nosotros} />
 			<Route path="contacto" component={Contacto} />
-			<Route path="collares" component={Collares} />
+			<Route path="necklace" component={Necklace} />
 			<Route path="pulseras" component={Pulseras} />
-			<Route path="aretes" component={Aretes} />
+			<Route path="earing" component={Earing} />
 			<Route path="preguntas" component={Preguntas} />
 		</Route>
 	</Router>

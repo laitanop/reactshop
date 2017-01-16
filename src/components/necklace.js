@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import * as actions from '../actions';
 import Item from './item';
 
-class Collares extends Component {
+class Necklace extends Component {
   componentWillMount() {
     this.props.fetchItems('collares');
    }
@@ -54,4 +54,4 @@ function mapStateToProps(state) {
   return { items: state.items.items };
 }
 
-export default connect(mapStateToProps, actions)(Collares);
+export default connect(mapStateToProps, actions)(Necklace);

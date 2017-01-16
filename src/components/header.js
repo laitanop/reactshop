@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
-import { MenuItem, NavItem, Navbar, NavDropdown, Nav, FormControl, Glyphicon } from 'react-bootstrap';
-import NavBar from './navbar';
+import { MenuItem, NavItem, Navbar, NavDropdown, Nav, Glyphicon } from 'react-bootstrap';
+
 
 
 class Header extends Component {
@@ -10,23 +10,22 @@ class Header extends Component {
 		const authenticated = this.props.authenticated;
 	
 			return (
-			<Navbar>
+			<Navbar className="navbar-form navbar-fixed-top">
 			
-			<Nav>
-			<NavItem eventKey={1}><Link to="/"><img className="lead float-xs-left" role="presentation" src="img/logo/logo1.jpg" width="100" height="" /></Link></NavItem>
-				<NavItem eventKey={2}><Link to="nosotros">About</Link></NavItem>
-				<NavItem eventKey={3}><Link to="contacto">Contact Us</Link></NavItem>
-					<NavDropdown eventKey={4} title="Shop" id="basic-nav-dropdown">
-						<MenuItem eventKey={4.1} ><Link to="collares">Necklaces</Link></MenuItem>
-						<MenuItem eventKey={4.2}><Link to="pulseras">Bracelet</Link></MenuItem>
-						<MenuItem eventKey={4.3}><Link to="aretes">Earings</Link></MenuItem>
-					</NavDropdown> 
+			<Nav className="nav">
+			<NavItem eventKey={2}><Link to="nosotros">About</Link></NavItem>
+			<NavItem eventKey={3}><Link to="contacto">Contact Us</Link></NavItem>
+			<NavDropdown eventKey={4} title="Shop" id="basic-nav-dropdown">
+				<MenuItem eventKey={4.1} ><Link to="necklace">Necklaces</Link></MenuItem>
+				<MenuItem eventKey={4.2}><Link to="pulseras">Bracelet</Link></MenuItem>
+				<MenuItem eventKey={4.3}><Link to="earing">Earings</Link></MenuItem>
+			</NavDropdown> 
 
 		
 			{ this.renderSignIn(authenticated) } 
 			
 			<NavItem eventKey={16}>&nbsp;Shopping Cart &nbsp;<Glyphicon glyph="glyphicon glyphicon-shopping-cart" /></NavItem>
-			<NavItem eventKey={15}><FormControl type="text" placeholder="Search..." /></NavItem>	 
+	
 			</Nav>
 			</Navbar>
 		
@@ -50,9 +49,12 @@ class Header extends Component {
 		}
 		render() {
 			return (
-				<div className="div1">
-				<NavBar />
+				<div>
+				
+				
 						{this.renderLinks()}	
+
+				
 				
 				
 				</div>
@@ -65,3 +67,7 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps)(Header);
+
+
+	// <NavItem eventKey={1}><Link to="/"><img className="lead float-xs-left" role="presentation" src="img/logo/logo1.jpg" width="100" height="" /></Link></NavItem>
+// <NavItem eventKey={15}><FormControl type="text" placeholder="Search..." /></NavItem>

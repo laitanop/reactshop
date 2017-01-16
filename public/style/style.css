@@ -12,9 +12,6 @@
     width: 400px;
 }
 
-#buscar {
-	float: right;
-}
 
 #basic-nav-dropdown{
 	position: bottom;
@@ -23,16 +20,35 @@
 	
 }
 
-#itemcarousel {
-	float: left;
-
-}
 
 body {
 	-webkit-text-size-adjust:none;
 }
 
-.div1 {
-	background-color: #6A5ACD;
+
+
+.photoshape {
+	margin-top: 40px;
 }
 
+.mynamesite {
+	font-family: Lucida Bright,Georgia,serif;
+	color: #6495ED;
+	padding-top: 150px;
+	
+
+}
+
+.navbar-fixed-top {
+	float: right;
+	
+}
+.nav {
+	float: right;
+	color: black;
+}
+.information {
+	background: #FF1493;
+	color: white
+	
+}
