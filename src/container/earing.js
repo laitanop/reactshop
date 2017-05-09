@@ -3,8 +3,7 @@ import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
-import Item from '../components/item_and_modal';
-// import Item from '../components/item';
+import Item from '../components/item';
 
 class Earing extends Component {
 
