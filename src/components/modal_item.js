@@ -15,6 +15,7 @@ class ModalItem extends React.Component {
                     price: '' };
 
     const item = this.props.item ? this.props.item : emptyItem;
+    console.log('Modal item entered');
 
     return (
       <Modal {...this.props} bsSize="large" aria-labelledby="contained-modal-title-lg">
