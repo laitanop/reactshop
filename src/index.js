@@ -8,20 +8,20 @@ import * as Actions from './actions';
 
 
 import App from './components/app';
-import Signin from './components/auth/signin';
-import Signout from './components/auth/signout';
-import Signup from './components/auth/signup';
-import Feature from './components/feature';
-import RequireAuth from './components/auth/require_auth';
+import Signin from './container/auth/signin';
+import Signout from './container/auth/signout';
+import Signup from './container/auth/signup';
+import Feature from './container/feature';
+import RequireAuth from './container/auth/require_auth';
 // import Landing from './components/landing';
 import reducers from './reducers';
-import Inicio from './components/inicio';
-import Nosotros from './components/nosotros';
-import Contacto from './components/contacto';
-import Necklace from './components/necklace';
-import Pulseras from './components/pulseras';
-import Earing from './components/earing';
-import Preguntas from './components/preguntas';
+import HomePage from './components/homepage';
+import AboutUs from './components/about_us';
+import Contact from './components/contact';
+import Necklace from './container/necklace';
+import Pulseras from './container/pulseras';
+import Earing from './container/earing';
+import Faq from './components/faq';
 
 
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
@@ -35,18 +35,18 @@ ReactDOM.render(
 <Provider store={store}>
 	<Router history={browserHistory} >
 		<Route path="/" component={App} >
-			<IndexRoute component={Inicio} />
+			<IndexRoute component={HomePage} />
 			<Route path="signin" component={Signin} />
 			<Route path="signout" component={Signout} />
 			<Route path="signup" component={Signup} />
 			<Route path="feature" component={RequireAuth(Feature)} />
-			<Route path="nosotros" component={Nosotros} />
-			<Route path="contacto" component={Contacto} />
+			<Route path="about_us" component={AboutUs} />
+			<Route path="contact" component={Contact} />
 			<Route path="necklace" component={Necklace} />
 			<Route path="pulseras" component={Pulseras} />
 			<Route path="earing" component={Earing} />
-			<Route path="preguntas" component={Preguntas} />
+			<Route path="faq" component={Faq} />
 		</Route>
 	</Router>
 </Provider>
-, document.querySelector('.container'));
+, document.querySelector('.container-fluid '));

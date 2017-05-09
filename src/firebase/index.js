@@ -11,11 +11,12 @@ try {
 	};
 
 	firebase.initializeApp(config);
+
 } catch (e) {
+
 	console.log('error cargando firebase');
 	console.log(e);
 }
 
 export const firebaseRef = firebase.database().ref();
 export default firebase;
-

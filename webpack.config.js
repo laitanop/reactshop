@@ -1,6 +1,6 @@
-var webpack = require('webpack');
-var path = require('path');
-var envFile = require('node-env-file');
+const webpack = require('webpack');
+const path = require('path');
+const envFile = require('node-env-file');
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
@@ -49,14 +49,14 @@ const config = {
   }
 };
 
-if (process.env.NODE_ENV === 'production') {
-    config.plugins.push(
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-               warnings: false
-            }
-        })
-    );
-}   
+// if (process.env.NODE_ENV === 'production') {
+//     config.plugins.push(
+//         new webpack.optimize.UglifyJsPlugin({
+//             compress: {
+//                warnings: false
+//             }
+//         })
+//     );
+// }
 
 module.exports = config;

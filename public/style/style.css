@@ -1,80 +1,180 @@
-.glyphicon.glyphicon-shopping-cart {
+/* nav-up*/
+.upbanner {
+	background-color: #81d8d0;
+	border-color: #81d8d0;
+	margin: auto;
+	border-style: solid;
+}
+.nameSite {
+	text-align: center;
+	margin-top: 15px;
+}
 
+.nameSite .name h1{
+	font-family: "Sterling SSm A", "Sterling SSm B", serif;
+	color: #696969;
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 18px;
+
+
+}
+
+/*End nav-up*/
+
+/*header*/
+.navbar {
+	background: transparent;
+	display: inline-block;
+  float: none;
+  vertical-align: top;
+
+
+
+}
+.header {
+	text-align: center;
+	font-family: cursive;
 	font-size: 18px;
-	color: grey;
-	padding: 30px 15px;
+	color: #696969;
+
 }
 
-#footer {
-	background: none repeat scroll 0 0 white;
-    height: 100px;
-    margin: auto;
-    width: 400px;
+
+/*end header*/
+
+/*photoshape*/
+.photoshape {
+	margin-top: 40px;
 }
+/*end photoshape*/
+
+/*information*/
+.information {
+	background: #81d8d0;
+	color: #696969;
+	font-family: cursive;
+	text-align: center;
+
+}
+
+/*end information*/
+
+/*footerinformation*/
+.footerinformation {
+	margin-top: 20px;
+}
+.footerinformation p{
+
+	font-family: cursive;
+	font-size: 20px;
+	text-align: center;
+
+
+}
+
+
+/*end footerinformation*/
+
+/*navfooter*/
+
+.section-primary{
+	margin-top: 50px;
+	background:#81d8d0;
+	color:#fff;
+	padding:60px 0;
+}
+
+.section-primary {
+	background-color: #81d8d0;
+	margin-top: 25px;
+	text-align: center;
+	color:#fff;
+
+
+
+}
+.section-primary a {
+	color:#fff;
+}
+
+
+.section-primary  li{
+	display: block;
+}
+.section-primary  p{
+	margin-top: 50px;
+}
+/*end navfooter*/
+
+/*footer*/
+
+
+/*end footer*/
+
+
+/*about page*/
+.AboutUs {
+	font-family: cursive;
+	font-size: 18px;
+}
+.AboutUs h2{
+	color: #81d8d0;
+font-family: cursive;
+
+}
+/*end about page*/
+
+/*contact us*/
+.Contact {
+
+	font-family: cursive;
+
+
+}
+.Contact img{
+	width: 100%;
+    height: auto;
+}
+.Contact h1{
+	color: #81d8d0;
+font-family: cursive;
+
+
+}
+.Message{
+	margin-top: 150px;
+color: #81d8d0;
+
+}
+/*end contact us*/
+
+/*sign in*/
+.signin button{
+	background-color:#81d8d0;
+	border-color: #81d8d0;
+}
+.signin p {
+	text-align: center;
+		font-family: "Sterling SSm A", "Sterling SSm B", serif;
+		color: #81d8d0;
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 18px;
+		margin-bottom: 40px;
+}
+
+/*end sign in*/
 
 
 #basic-nav-dropdown{
 	position: bottom;
 	display: block;
 	padding: 45px 15px;
-	
-}
-
-
-body {
-	-webkit-text-size-adjust:none;
-}
-
-
-
-.photoshape {
-	margin-top: 40px;
-}
-
-.mynamesite {
-	font-family: Lucida Bright,Georgia,serif;
-	color: #6495ED;
-	padding-top: 150px;
-
-	
 
 }
 
-.mynamesite h1 {
-	text-align: left;
+#itemModal {
+	font-family:  serif;
+	color: black;
 }
-
-/*.navbar-fixed-top {
-	float: right;
-
-}*/
-
-.navbar {
-	float: right;
-	font-size: 20px;
-	background: transparent;
-	
-}
-
-
-.information {
-	background: #FF1493;
-	color: white
-	
-}
-
-.navfooter {
-	display: inline;
-	float: right;
-	padding-top: 10px;
-
-	
-}
-
-.navfooter1 {
-	border-color: pink;
-	color: #FF1493;
-
-
-}
-

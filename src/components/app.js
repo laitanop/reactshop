@@ -1,27 +1,22 @@
 import React, { Component } from 'react';
 
-import Header from './header';
-import Footer from './footer';
-import MyNameSite from './mynamesite';
 
-
+import Header from '../container/header';
+import NavFooter from './navfooter';
 
 export default class App extends Component {
   render() {
-    return (	
+    return (
       <div>
+        <Header />
+      <div >
+      {this.props.children}
 
+      <NavFooter />
+      </div>
 
-      	<Header />
-        <MyNameSite />
-        
-      	{this.props.children}
-
-        
-        
-      	<Footer />
-      	
       </div>
     );
   }
 }
+  // <MyNameSite />
