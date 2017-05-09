@@ -7,7 +7,7 @@ import { Image } from 'react-bootstrap';
 class NavUp extends Component {
   render() {
     return (
-      <div>
+      <div id="navup">
         <div className="row upbanner">
         <div className="col-md-12" />
         </div>

@@ -1,24 +1,9 @@
 /* nav-up*/
-.upbanner {
-	background-color: #81d8d0;
-	border-color: #81d8d0;
-	margin: auto;
-	border-style: solid;
-}
+
+
 .nameSite {
 	text-align: center;
-	margin-top: 15px;
-}
-
-.nameSite .name h1{
-	font-family: "Sterling SSm A", "Sterling SSm B", serif;
-	color: #696969;
-	font-size: 30px;
-	font-weight: 300;
-	line-height: 18px;
-
-
-}
+	}
 
 /*End nav-up*/
 
@@ -28,11 +13,9 @@
 	display: inline-block;
   float: none;
   vertical-align: top;
-
-
-
 }
 .header {
+
 	text-align: center;
 	font-family: cursive;
 	font-size: 18px;

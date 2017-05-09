@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
 import { MenuItem, NavItem, Navbar, NavDropdown, Nav, Glyphicon } from 'react-bootstrap';
-import NavUp from '../components/nav-up';
+
 
 
 class Header extends Component {
@@ -57,7 +57,7 @@ class Header extends Component {
 			return (
 				<div>
 
-				<NavUp />
+
 				<div className="col-md-12 header">
 				{this.renderLinks()}
 
