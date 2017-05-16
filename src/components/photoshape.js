@@ -4,9 +4,8 @@ import { Grid, Row, Col, Thumbnail } from 'react-bootstrap';
 
 class PhotoShape extends Component {
   render() {
-  
     return (
-      <div>
+      <div className="photoshape">
 <Grid className="photoshape">
     <Row>
     <Col xs={6} md={4}>

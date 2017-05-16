@@ -1,3 +1,4 @@
+
 /* nav-up*/
 
 
@@ -8,27 +9,19 @@
 /*End nav-up*/
 
 /*header*/
+
 .navbar {
-	background: transparent;
-	display: inline-block;
-  float: none;
-  vertical-align: top;
-}
-.header {
-
-	text-align: center;
-	font-family: cursive;
-	font-size: 18px;
+	background-color: #81d8d0;
 	color: #696969;
-
-}
+	}
 
 
 /*end header*/
 
 /*photoshape*/
 .photoshape {
-	margin-top: 40px;
+	margin-top: 20px;
+
 }
 /*end photoshape*/
 
@@ -160,4 +153,14 @@ color: #81d8d0;
 #itemModal {
 	font-family:  serif;
 	color: black;
+}
+
+@media (min-width: 320px) and (max-width: 768px ) {
+	#landing {
+		width: 100%;
+    height: auto;
+
+
+	}
+
 }

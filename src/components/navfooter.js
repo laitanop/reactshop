@@ -27,7 +27,7 @@ class NavFooter extends Component {
         <ul className="feature-list">
         <li><Link to="about_us">About</Link></li>
         <li><Link to="contact">Contact Us</Link></li>
-        <li><Link to="faq">FAQ</Link></li>
+      
         </ul>
       </div>
         <div className="col-md-3">

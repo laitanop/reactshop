@@ -19,7 +19,7 @@ class NavUp extends Component {
         </div>
         <div className="col-md-4 name">
         <Link to="/">
-         <Image src="/img/logo/logo2.jpg"  height="100" width="200"/>
+         <Image src="/img/logo/logo3.jpg"  />
         </Link>
         </div>
 

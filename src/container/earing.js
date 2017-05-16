@@ -13,7 +13,7 @@ class Earing extends Component {
 renderItem(item) { //[1]
       return (
           <div>
-            <Col xs={6} md={4}>
+            <Col xs={12} md={4}>
               <Item
                 item={item}
                 type={'aretes'}

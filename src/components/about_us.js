@@ -9,7 +9,7 @@ class AboutUs extends Component {
       <div className="container-fluid AboutUs">
       <div className="row">
       <div className="col-md-6">
-      <img className="center-block" src="img/c2.jpg" role="presentation" />
+      <img className="center-block" id="landing" src="img//items/pulseras/73.jpg" role="presentation" height="400" width="500" />
       </div>
       <div className="col-md-6">
       <h2>Laitanos Handmade Jewerly</h2>
@@ -32,7 +32,7 @@ class AboutUs extends Component {
       <p>Lets inspire each other to stay true to who we are and have fun doing it! </p>
       </div>
       <div className="col-md-6">
-        <img className="center-block" src="img/c8.jpg" role="presentation" />
+        <img className="center-block" id="landing"src="img//items/pulseras/40.jpg" role="presentation" height="400" width="500" />
 
       </div>
 

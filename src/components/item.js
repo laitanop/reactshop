@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Thumbnail, Button, Image } from 'react-bootstrap';
-import ModalItem from '../components/modal_item';
 import Modal from 'react-modal'
 
 //const mainDiv = document.getElementById('.container-fluid');
@@ -23,9 +22,9 @@ class Item extends Component {
         >
           <Thumbnail>
             <Image
+						id="landing"
             src={item.imagePath}
-            alt="242x200"
-          />
+						/>
               <h3>{item.name}</h3>
               <p>{item.description}</p>
               <p>{item.price}</p>
@@ -36,7 +35,7 @@ class Item extends Component {
         </Modal>
     );
   }
-    
+
 	/*	<ModalItem
 					show={this.state.lgShow}
 					onHide={lgClose}
@@ -65,7 +64,7 @@ class Item extends Component {
             <div>
               <Thumbnail>
                 <Image
-                  src={item.imagePath}
+								src={item.imagePath}
                   alt="242x200"
                   onClick={() => this.setState({ lgShow: true })}
                   responsive

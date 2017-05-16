@@ -14,7 +14,7 @@ renderItem(item) { //[1]
       console.log(item);
       return (
           <div>
-            <Col xs={6} md={4}>
+            <Col xs={12} md={4}>
               <Item
                 item={item}
                 type={'pulseras'}
