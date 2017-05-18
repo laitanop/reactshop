@@ -6,8 +6,6 @@
   "repository": "git@github.com:Laitanop/React-Shop.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test:watch": "npm run test -- --watch",
-    "build": "webpack -p --progress --colors",
     "start": "node server.js"
   },
   "author": "",
