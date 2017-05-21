@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Thumbnail, Button, Image } from 'react-bootstrap';
-import Modal from 'react-modal'
+import ReactImageZoom from 'react-image-zoom';
+
+import Modal from 'react-modal';
 
 //const mainDiv = document.getElementById('.container-fluid');
 
@@ -12,6 +14,7 @@ class Item extends Component {
 	}
 
 	renderModal(lgClose, item) {
+		const props = { width: 400, height: 250, zoomWidth: 500, img: item.imagePath };
     if (this.state.lgShow) {
       return (
         <Modal
@@ -20,18 +23,20 @@ class Item extends Component {
           style={customStyles}
           contentLabel="Modal"
         >
-          <Thumbnail>
-            <Image
-						id="landing"
-            src={item.imagePath}
-						/>
+				<Thumbnail>
+
+
+					<Image id="landing"
+					src={item.imagePath} />
+
               <h3>{item.name}</h3>
               <p>{item.description}</p>
               <p>{item.price}</p>
               <p>
                 <Button bsStyle="btn btn-info">Add to Cart</Button>&nbsp;
                 </p>
-            </Thumbnail>
+								</Thumbnail>
+
         </Modal>
     );
   }
@@ -62,20 +67,21 @@ class Item extends Component {
 
       return (
             <div>
-              <Thumbnail>
+								<div className="brightness"	>
                 <Image
-								src={item.imagePath}
+									src={item.imagePath}
                   alt="242x200"
                   onClick={() => this.setState({ lgShow: true })}
                   responsive
                 />
+								</div>
                 <h3 id="itemModal">{item.name}</h3>
                 <h5 id="itemModal">{item.description}</h5>
                 <p id="itemModal">{item.price}</p>
                 <p>
-                  {/*<Button bsStyle="btn btn-info">Add to Cart</Button>&nbsp;*/}
+                <Button bsStyle="btn btn-info">Add to Cart</Button>
                 </p>
-              </Thumbnail>
+
               {this.renderModal(lgClose, item)}
             </div>
 
@@ -93,4 +99,6 @@ const customStyles = {
     transform             : 'translate(-50%, -50%)'
   }
 };
+
+
 export default Item;

@@ -5,6 +5,8 @@
   "main": "index.js",
   "repository": "git@github.com:Laitanop/React-Shop.git",
   "scripts": {
+    "clean": "rimraf public/bundle.js",
+    "build": "NODE_ENV=production npm run clean && webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
@@ -42,6 +44,7 @@
     "react-addons-transition-group": "^15.5.2",
     "react-bootstrap": "^0.30.7",
     "react-dom": "^0.14.9",
+    "react-image-zoom": "^0.5.1",
     "react-modal": "^1.7.7",
     "react-redux": "^4.0.0",
     "react-router": "^2.0.1",
@@ -50,6 +53,7 @@
     "redux": "^3.0.4",
     "redux-form": "^4.1.3",
     "redux-thunk": "^2.1.0",
+    "rimraf": "^2.6.1",
     "webpack": "^1.12.9"
   }
 }

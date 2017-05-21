@@ -5,21 +5,36 @@ import { MenuItem, NavItem, Navbar, NavDropdown, Nav } from 'react-bootstrap';
 
 
 class Header extends Component {
+	constructor(props) {
+		super(props);
+		this.state = { isOpen: false };
+	}
+	handleOpen = () => {
+		this.setState({ isOpen: true });
+	}
+	handleClose = () => {
+		this.setState({ isOpen: false });
+	}
 
 	renderLinks() {
 		const authenticated = this.props.authenticated;
 
-
 			return (
 				<Nav>
-
+				<NavItem eventKey={0}><Link to="/">Home</Link></NavItem>
 				<NavItem eventKey={1}><Link to="about_us">About</Link></NavItem>
         <NavItem eventKey={2}><Link to="contact">Contact Us</Link></NavItem>
-        <NavDropdown eventKey={3} title="Collections" id="basic-nav-dropdown">
-          <MenuItem eventKey={3.1}><Link to="pulseras">Bracelet</Link></MenuItem>
-          <MenuItem eventKey={3.2}><Link to="earing">Earings</Link></MenuItem>
-          // <MenuItem eventKey={3.3}><Link to="necklace">Necklaces</Link></MenuItem>
+				<NavDropdown
+				onMouseEnter={this.handleOpen}
+				onMouseLeave={this.handleClose}
+				open={this.state.isOpen}
+				eventKey={3} title="Collections" id="basic-nav-dropdown"
+				>
+          <MenuItem id="itemcolor"eventKey={3.1}><Link to="pulseras" id="itemcolor">Bracelet</Link></MenuItem>
+          <MenuItem id="itemcolor"eventKey={3.2}><Link to="earing" id="itemcolor">Earings</Link></MenuItem>
+          {/* <MenuItem eventKey={3.3}><Link to="necklace">Necklaces</Link></MenuItem>*/}
         </NavDropdown>
+
 				{ this.renderSignIn(authenticated) }
 
 </Nav>

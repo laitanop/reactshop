@@ -1,7 +1,32 @@
 
 /* nav-up*/
+.brightness {
+    background-color: white;
+    display: inline-block;
 
+}
+.brightness img:hover {
+    opacity: .5;
+}
 
+.zoomWrapper {
+    background-color: white;
+    display: inline-block;
+
+}
+.zoomWrapper img:hover {
+	-moz-transform: scale(1.3);
+-webkit-transform: scale(1.3);
+transform: scale(1.3);
+}
+
+#basic-nav-dropdown {
+	background-color:  #81d8d0;
+}
+#itemcolor {
+	background-color:#b3e7e2;
+
+}
 .nameSite {
 	text-align: center;
 	}
