@@ -12,7 +12,7 @@ class AboutUs extends Component {
       <img className="center-block" id="landing" src="img//items/pulseras/73.jpg" role="presentation" height="400" width="500" />
       </div>
       <div className="col-md-6">
-      <h2>Laitanos Handmade Jewerly</h2>
+      <h2>Laitanos Handmade Jewerlys</h2>
       <p> Is an online shop dedicated to the elaboration by hand of accessories
        like being necklaces, earrings, bracelets, bracelets and among others,
        they are 100% original and personalized. </p>
