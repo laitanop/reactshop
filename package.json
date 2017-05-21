@@ -8,7 +8,9 @@
     "clean": "rimraf public/bundle.js",
     "build": "NODE_ENV=production npm run clean && webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=production npm run build && node server.js"
+    "start": "node server.js",
+    "prod": "NODE_ENV=production node server.js",
+    "postinstall": "webpack -p"
   },
   "author": "",
   "license": "ISC",
