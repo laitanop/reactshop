@@ -37,9 +37,13 @@ to make it work on your local environment. Please note that the
 value should not have any quotes or curly braces. e.g. API_KEY=asdqwe1kj1l2l1231231
 
 API_KEY={replace with your firebase api data}
+
 AUTH_DOMAIN={replace with your firebase api data}
+
 DATABASE_URL={replace with your firebase api data}
+
 STORAGE_BUCKET={replace with your firebase api data}
+
 MESSAGING_SENDER_ID={replace with your firebase api data}
 
 ## Running the tests
