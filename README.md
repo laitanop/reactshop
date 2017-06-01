@@ -20,7 +20,7 @@ git clone https://github.com/laitanop/reactshop.git
 Once you have the code in your local machine follow these steps.
 
 ```
-npm install
+npm install or yarn install
 ```
 
 Then you need to create in your development environment 
