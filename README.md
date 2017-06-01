@@ -12,7 +12,7 @@ You need to have node and npm or yarn install in your local machine.
 You can clone the repository or download the zip file.
 
 ```
-git clone https://github.com/dmolina79/reactshop.git
+git clone https://github.com/laitanop/reactshop.git
 ```
 
 ### Installing
