@@ -1,4 +1,4 @@
-# Project Title
+# ReactShop
 
 React Based Shop based on ETSY type product.
 Uses Firebase as a backend store and authentication platform.
