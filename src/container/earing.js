@@ -7,9 +7,9 @@ import Item from '../components/item';
 
 class Earing extends Component {
 
-	componentWillMount() {
+componentWillMount() {
     this.props.fetchItems('earing');
-   }
+}
 renderItem(item) { //[1]
       return (
           <div>

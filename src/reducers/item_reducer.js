@@ -1,4 +1,6 @@
-import { FETCH_ITEMS } from '../actions/types';
+import { 
+	FETCH_ITEMS
+ } from '../actions/types';
 
 const initialState = {
   items: null,

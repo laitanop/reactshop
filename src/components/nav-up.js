@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import { Image } from 'react-bootstrap';
-import ShopCart from '../container/shopCart';
+import NavBarCart from '../container/navBarCart';
 
 
 class NavUp extends Component {
@@ -23,12 +23,7 @@ class NavUp extends Component {
             <Image src="/img/logo/logo3.jpg" />
             </Link>
           </div>
-          <div className="shopCart">
-          <Link className="shopCart" to="ShopCart"><span className="glyphicon glyphicon-shopping-cart" aria-hidden="true" /> Shopping Cart</Link>
-
-          </div>
-
-
+          <NavBarCart />
         </div>
       </div>
 

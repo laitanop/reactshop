@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Thumbnail, Button, Image } from 'react-bootstrap';
-import ReactImageZoom from 'react-image-zoom';
-
 import Modal from 'react-modal';
+import { connect } from 'react-redux';
+import * as actions from '../actions';
 
 //const mainDiv = document.getElementById('.container-fluid');
 
@@ -11,10 +11,11 @@ class Item extends Component {
 	constructor(props) {
 		super(props);
 		this.state = { lgShow: false };
+    this.renderModal = this.renderModal.bind(this);
 	}
 
 	renderModal(lgClose, item) {
-		const props = { width: 400, height: 250, zoomWidth: 500, img: item.imagePath };
+	//	const props = { width: 400, height: 250, zoomWidth: 500, img: item.imagePath };
     if (this.state.lgShow) {
       return (
         <Modal
@@ -24,16 +25,21 @@ class Item extends Component {
           contentLabel="Modal"
         >
 				<Thumbnail>
-
-
-					<Image id="landing"
-					src={item.imagePath} />
+        <Image 
+            id="landing"
+            src={item.imagePath} 
+        />
 
               <h3>{item.name}</h3>
               <p>{item.description}</p>
               <p>{item.price}</p>
               <p>
-                <Button bsStyle="btn btn-info">Add to Cart</Button>&nbsp;
+                <Button 
+                  bsStyle="btn btn-info"
+                  onClick={() => this.props.addToCart(item)}
+                >
+                Add to Cart
+                </Button>&nbsp;
                 </p>
 								</Thumbnail>
 
@@ -50,6 +56,7 @@ class Item extends Component {
 		}
 	// end modal
   render() {
+
       const imgPathBase = 'img/items/';
       const imgFolder = this.props.type ? this.props.type : '';
       const imgPath = imgPathBase + imgFolder;
@@ -58,12 +65,13 @@ class Item extends Component {
                       name: '',
                       descripcion: '',
                       price: '' };
-
+                
       const item = this.props.item ? this.props.item : emptyItem;
       // modal
       const lgClose = () => this.setState({ lgShow: false });
       // end modal
       item.imagePath = imgPath + '/' + item.img;
+
 
       return (
             <div>
@@ -79,7 +87,12 @@ class Item extends Component {
                 <h5 id="itemModal">{item.description}</h5>
                 <p id="itemModal">{item.price}</p>
                 <p>
-                <Button bsStyle="btn btn-info">Add to Cart</Button>
+                <Button 
+                  bsStyle="btn btn-info"
+                  onClick={() => this.props.addToCart(item)}
+                >
+                Add to Cart
+                </Button>
                 </p>
 
               {this.renderModal(lgClose, item)}
@@ -100,5 +113,5 @@ const customStyles = {
   }
 };
 
+export default connect(null, actions)(Item);
 
-export default Item;
