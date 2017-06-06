@@ -22,6 +22,7 @@ import Necklace from './container/necklace';
 import Pulseras from './container/pulseras';
 import Earing from './container/earing';
 import Faq from './components/faq';
+import ShopCart from './container/shopCart';
 
 
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
@@ -46,6 +47,7 @@ ReactDOM.render(
 			<Route path="pulseras" component={Pulseras} />
 			<Route path="earing" component={Earing} />
 			<Route path="faq" component={Faq} />
+			<Route path="shopCart" component={ShopCart} />
 		</Route>
 	</Router>
 </Provider>

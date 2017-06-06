@@ -82,7 +82,7 @@ transform: scale(1.3);
 .section-primary{
 	margin-top: 50px;
 	background:#81d8d0;
-	color:#fff;
+	color:#696969;
 	padding:60px 0;
 }
 
@@ -90,13 +90,13 @@ transform: scale(1.3);
 	background-color: #81d8d0;
 	margin-top: 25px;
 	text-align: center;
-	color:#fff;
+	color:#696969;
 
 
 
 }
 .section-primary a {
-	color:#fff;
+	color:#696969;
 }
 
 
@@ -180,6 +180,20 @@ color: #81d8d0;
 	color: black;
 }
 
+.shopCart {
+  margin-top: 30px;
+  color: #81d8d0;
+}
+.glyphicon-shopping-cart {
+  color: #81d8d0;
+}
+.products {
+  text-align: center;
+}
+.continueShopping {
+  text-align: right;
+  font-size: 12px;
+}
 @media (min-width: 320px) and (max-width: 768px ) {
 	#landing {
 		width: 100%;
