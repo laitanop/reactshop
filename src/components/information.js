@@ -7,12 +7,12 @@ class Information extends Component {
     return (
       <div>
 
-        <Jumbotron className="information">
-    <h2>Wearing Jewels</h2>
-    <p>is a way to express THE WOMAN you are....</p>
-    <p>.... without SAYING A WORD.</p>
+          <Jumbotron className="information">
+            <h2>Wearing Jewels</h2>
+            <p>is a way to express THE WOMAN you are....<br />.... without SAYING A WORD.</p>
+          </Jumbotron>       
 
-  </Jumbotron>
+
   <div className="row upbanner">
   <div className="col-md-12" />
   </div>

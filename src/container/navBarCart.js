@@ -6,14 +6,16 @@ class NavBarCart extends Component {
 	render() {
 		return (
             <div className="shopCart">
-                <div>{this.props.cartCount}</div>
+
                 <Link className="shopCart" to="ShopCart">
-                    <span 
-                        className="glyphicon glyphicon-shopping-cart" 
-                        aria-hidden="true" 
-                    /> 
+                    <span
+                        className="glyphicon glyphicon-shopping-cart"
+                        aria-hidden="true"
+                    />
                 Shopping Cart
+								<div>{this.props.cartCount}</div>
                 </Link>
+
             </div>
 		);
 	}

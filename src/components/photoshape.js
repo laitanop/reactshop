@@ -15,12 +15,10 @@ class PhotoShape extends Component {
     </Col>
     <Col xs={6} md={4}>
       <Thumbnail src="img/photoshape/ps9.jpg" alt="242x200" />
-
-
+      
     </Col>
     <Col xs={6} md={4}>
       <Thumbnail src="img/photoshape/ps8.jpg" alt="242x200" />
-
 
     </Col>
     </Row>

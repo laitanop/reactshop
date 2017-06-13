@@ -4,8 +4,6 @@ import Modal from 'react-modal';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 
-//const mainDiv = document.getElementById('.container-fluid');
-
 class Item extends Component {
 	// Modal
 	constructor(props) {
@@ -25,16 +23,16 @@ class Item extends Component {
           contentLabel="Modal"
         >
 				<Thumbnail>
-        <Image 
+        <Image
             id="landing"
-            src={item.imagePath} 
+            src={item.imagePath}
         />
 
               <h3>{item.name}</h3>
               <p>{item.description}</p>
               <p>{item.price}</p>
               <p>
-                <Button 
+                <Button
                   bsStyle="btn btn-info"
                   onClick={() => this.props.addToCart(item)}
                 >
@@ -65,7 +63,7 @@ class Item extends Component {
                       name: '',
                       descripcion: '',
                       price: '' };
-                
+
       const item = this.props.item ? this.props.item : emptyItem;
       // modal
       const lgClose = () => this.setState({ lgShow: false });
@@ -87,7 +85,7 @@ class Item extends Component {
                 <h5 id="itemModal">{item.description}</h5>
                 <p id="itemModal">{item.price}</p>
                 <p>
-                <Button 
+                <Button
                   bsStyle="btn btn-info"
                   onClick={() => this.props.addToCart(item)}
                 >
@@ -114,4 +112,3 @@ const customStyles = {
 };
 
 export default connect(null, actions)(Item);
-

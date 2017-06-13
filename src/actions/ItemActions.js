@@ -1,10 +1,10 @@
 //import { browserHistory } from 'react-router';
 import firebase, { firebaseRef } from '../firebase';
 
-import { 
+import {
   FETCH_ITEMS,
   ADD_CART
-  
+
 } from './types';
 
 export function addToCart(item) {
@@ -26,13 +26,12 @@ export function fetchItems(itemName) {
     Object.keys(items).forEach((itemId) => {
       parsedItems.push({
         id: itemId,
-        ...items[itemId]  
+        ...items[itemId]
       });
     });
-   
-    dispatch({ type: FETCH_ITEMS, 
+
+    dispatch({ type: FETCH_ITEMS,
                payload: parsedItems });
     });
  };
 }
-

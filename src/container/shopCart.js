@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import CartItem from './cartItem';
 
 
@@ -20,7 +21,7 @@ class ShopCart extends Component {
               <div className="col-md-8">
                 <div className="panel panel-default">
                   <div className="panel-heading">Products</div>
-                  <CartItem />
+                  <CartItem item={this.items} />
                 </div>
               </div>
               <div className="col-md-4">
@@ -37,4 +38,9 @@ class ShopCart extends Component {
   }
 }
 
-export default ShopCart;
+
+function mapStateToProps(state) {
+  return { items: state.cart.items };
+}
+
+export default connect(mapStateToProps, null)(ShopCart);

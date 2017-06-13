@@ -38,7 +38,8 @@ class Signin extends Component {
 							{this.renderAlert()}
 							<button action="submit" className="btn btn-info">
 							Sign in
-							</button>
+							</button>&nbsp;&nbsp;
+							<button type="submit" className="btn btn-primary">Sign in with facebook</button>
 						</form>
 					</div>
 				</div>

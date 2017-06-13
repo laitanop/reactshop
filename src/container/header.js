@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
-import { MenuItem, NavItem, Navbar, NavDropdown, Nav } from 'react-bootstrap';
+import { MenuItem, NavItem, Navbar, NavDropdown, Nav, Glyphicon, Badge } from 'react-bootstrap';
+import NavBarCart from './navBarCart';
 
 
 class Header extends Component {
@@ -30,14 +31,28 @@ class Header extends Component {
 				open={this.state.isOpen}
 				eventKey={3} title="Collections" id="basic-nav-dropdown"
 				>
-          <MenuItem id="itemcolor"eventKey={3.1}><Link to="pulseras" id="itemcolor">Bracelet</Link></MenuItem>
-          <MenuItem id="itemcolor"eventKey={3.2}><Link to="earing" id="itemcolor">Earings</Link></MenuItem>
+  <MenuItem
+					id="itemcolor"eventKey={3.1}
+		>
+					<Link to="pulseras" id="itemcolor">Bracelet</Link></MenuItem>
+  <MenuItem
+					id="itemcolor"eventKey={3.2}
+		>
+					<Link to="earing" id="itemcolor">Earrings</Link></MenuItem>
           {/* <MenuItem eventKey={3.3}><Link to="necklace">Necklaces</Link></MenuItem>*/}
         </NavDropdown>
 
-				{ this.renderSignIn(authenticated) }
 
-</Nav>
+				{ this.renderSignIn(authenticated) }
+				<NavItem
+				eventKey={7}
+				><Link
+				className=""
+				to="ShopCart"
+				>
+				<Glyphicon glyph="shopping-cart" aria-hidden="true" /> Shopping Cart: <Badge>{this.props.cartCount}</Badge></Link></NavItem>
+
+				</Nav>
 
 			);
 		}
@@ -70,6 +85,7 @@ class Header extends Component {
     <Navbar.Collapse>
       <Nav pullRight>
         {this.renderLinks()}
+
       </Nav>
     </Navbar.Collapse>
   </Navbar>
@@ -80,7 +96,9 @@ class Header extends Component {
 }
 
 function mapStateToProps(state) {
-	return { authenticated: state.auth.authenticated };
+	return {
+		authenticated: state.auth.authenticated,
+		cartCount: state.cart.count };
 }
 
-export default connect(mapStateToProps)(Header);
+export default connect(mapStateToProps, null)(Header);

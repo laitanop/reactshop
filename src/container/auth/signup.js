@@ -73,7 +73,8 @@ class Signup extends Component {
 				{_.map(FIELDS, this.renderField.bind(this))}
 				{this.renderAlert()}
 				</fieldset>
-				<button type="submit" className="btn btn-primary">Sign Up!</button>
+				<button type="submit" className="btn btn-info">Sign Up!</button>&nbsp;&nbsp;
+				<button type="submit" className="btn btn-primary">Sign Up with facebook</button>
 			</form>
 			</div>
 		</div>
