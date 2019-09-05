@@ -7,6 +7,11 @@ Uses Firebase as a backend store and authentication platform.
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. Note: this instructions assume you have a *NIX type terminal.
 
+<a href="http://localhost:3000/checkout?data=U2FsdGVkX1%2FSYsR%2Br9vFmPjMwYoeani3z8nSyLAMnKdVPdxIYaCMHU%2Fls%2F2wyLf1CZPETycuI%2BkfiM%2Fq561r8bJ7BN%2B9DNVYeO42z4ZnqVT19R7ZqokgqG1ov%2BhgFg3beGX3KxEdgl26uYAy3tvyVXpmS%2FgVazRvA1qH4Htv%2FgAj78tUwfT1SexKMnAam7DjJFw9o42J9Ey5RZVHk9cjBqnf0uCMqN7p5iYBn6D3i%2Bfoqu2WIrHkEBe4hiOhrOWOVNVembGFTg7FuNu%2F9mTKOjDFJyIGgLqexzrPqBbL%2FVEJJydElAI7F%2BAklqN5TnzCfIxabPl9vMBX7XmAxgi%2BgA%3D%3D">
+    <img src="https://stablepay.io/static/DonationsButtonBlueBlack.svg" >
+</a>
+
+
 ### Prerequisites
 You need to have node and npm or yarn install in your local machine.
 You can clone the repository or download the zip file.
