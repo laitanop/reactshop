@@ -7,7 +7,9 @@ Uses Firebase as a backend store and authentication platform.
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. Note: this instructions assume you have a *NIX type terminal.
 
-<a href="http://localhost:3000/checkout?data=U2FsdGVkX19wigC%2BpOoktY%2Begydh1J7zlV6BcD2NfR%2FDTFxUoAE3gOaQ4FetUDcsnEfoXkl56zBNDRU2Jf226skvQCQqdbHuoPQ4aglRM%2Buga%2F9NwMiWqQX5po2Q4Jch3PnwbGvfI0MvgH5gknOGvZHdXMqW2rCWwqTgU79n%2FHrZrAWlvwgyHDlfwvcWxx2ALw%2BOk7Nk4c4T%2Bblq9nHZy9Q0UlWHOipDBq9lf2hdcdDOeXRVuAVuU6%2FA9azztq9yi0%2FcBJTKFDKXnPJ5vjNxYdiCKcMzU6h0gWZqS1MKv%2FAfCrYtCwi0qeJBIgUOkCD8v842dtwj6ZzGYS%2FCCBqQSWCUbhN3MJQ22fZ%2BXAQvaojOXo9ipQXov%2B7ZY9smXex4qoiUNFeeMNRcV09UxPj8wQ%3D%3D">
+
+
+<a href="http://localhost:3000/checkout?data=U2FsdGVkX19BsxMeOZMWOqtYOxt0wtW%2BgWpZELa1ysTCn0KwPgkhFtczHcq1Y0qyerwFLjmtUsvCNhhtp0fP%2B8n3Kp%2FHotbBG85C%2FJ%2Br3pwPMHi%2FA40qEdH2WIJwBpvLOuJbiIdS5%2BmofhlqIxXJx%2F%2BM%2BD6rnArXj3Qycdf8R7VHanhEW%2FwZrwcV2WIWZQewdezLBPdtC5kF5u30GYaOzB1fzPu6hm5TSlDiuP%2B8UIgnKJa3QCpRIAnnUX1UKqAq%2BgERvEnfXIgYxar9okKmWSVgZWW6iyceNMKB41Y3H5J4Xm1DfdBIKtT1aLgIKkIKmMB%2BYZK5UttOGvUHFz8ifJocBAzqkGfKX1kQfk7jyw9YVSsfOfEXBSLdWpybZMsx55crs%2BT9ordeen1yx25yDw%3D%3D">
     <img src="https://stablepay.io/static/DonationsButtonBlueBlack.svg" >
 </a>
 
